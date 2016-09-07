@@ -1,0 +1,12 @@
+<div class="home-page">
+  <h1>ParkFinder</h1>
+  <p> Enter address then click GO to see it as long/lat </p>
+
+
+  <%= form_for @location do |l| %>
+    <%#= l.label :address %>
+    <%#= l.text_area :address, class: 'form-control', placeholder: "Enter address" %>
+    <br>
+    <%= l.submit "GO!", class: 'btn btn-default' %>
+  <% end %>
+</div>
