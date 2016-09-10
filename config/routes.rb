@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
-  resources :locations
+  #TODO clean
+  resources :locations, only: [:new, :show]
 
-  get 'welcome/show'
+  #get 'welcome/show'
 
   get 'welcome/about'
 
