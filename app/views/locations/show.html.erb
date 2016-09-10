@@ -2,3 +2,11 @@
 <p>IP Address: <%= @location.ip %></p>
 <p>Lat: <%= @location.latitude %></p>
 <p>Long: <%= @location.longitude %></p>
+
+<!-- <p> Parks: <%= Location.near([@location.latitude, @location.longitude], 100) %></p> -->
+
+
+<!-- This works -->
+<p>Miles from <strong><%= Park.first.parkname %></strong>: <%=@location.distance_from(Park.first).round(2)%></p>
+
+<%= @parks.each %>
