@@ -5,7 +5,7 @@ def index
 
   # @parks = Park.all
 
-  @locations = Park.near("Erie, CO", 5000)
+  @locations = Park.near("Erie, CO", 5000) ## this shows on the index the parks near erie
 
   ## after submit go to show page with the method being 
   ## @ location = Park.near(@location.lat, @location.long, 1000)
@@ -14,7 +14,8 @@ end
 def show
   @location = Location.find(params[:id])
 
-  # @parks = Location.near("Boulder, CO", 40)
+  @parks = Park.near([@location.latitude, @location.longitude], 500)
+
 end
 
 def new
