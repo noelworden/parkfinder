@@ -3,4 +3,5 @@ class Park < ActiveRecord::Base
   after_validation :geocode, :if => :address_changed?
 
   PARK_TYPE = ["National Park", "National Forest", "National Monument", "State Park"]
+
 end

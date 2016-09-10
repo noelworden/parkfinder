@@ -15,3 +15,6 @@
 /log/*
 !/log/.keep
 /tmp
+
+#hiding the yaml file
+/config/secrets.yml
