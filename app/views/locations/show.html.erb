@@ -10,8 +10,8 @@
 
 <h2>The closest three parks</h2>
 <ul>
-  <% for park in @parks.limit(2) %>
-    <li> <%= link_to park.parkname, park %> || <%= park.address %> || Approx distance from you:
+  <% for park in @parks.limit(3) %>
+    <li> <%= link_to park.parkname, park %> || Approx distance from you:
       <strong><%= park.distance_from([@location.latitude, @location.longitude]).round(0)%></strong></li>
   <% end %>
 </ul>
