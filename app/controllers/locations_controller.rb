@@ -26,10 +26,10 @@ def create
   @location = Location.new(ip: ip)
 
   if @location.save
-    flash[:notice] = "Address has been converted to long/lat"
+    flash[:notice] = "Here are your adventures!"
     redirect_to @location
   else
-    flash.now[:alert] = "There was an conversion error"
+    flash.now[:alert] = "There was an error"
     redirect_to root_path
   end
 end
