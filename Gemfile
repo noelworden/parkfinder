@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 
 gem 'rails', '4.2.5'
-gem 'sqlite3'
+# gem 'sqlite3'
 gem 'sass-rails', '~> 5.0'
 gem 'bootstrap-sass'
 gem 'uglifier', '>= 1.3.0'
@@ -22,6 +22,7 @@ group :development, :test do
   gem 'rspec-rails', '~>3.0'
   gem 'pundit-matchers', '1.1.0'
   gem 'factory_girl_rails', '~>4.0'
+  gem 'sqlite3'
 
 end
 
