@@ -7,7 +7,7 @@ end
 def show
   @location = Location.find(params[:id])
 
-  @parks = Park.near([@location.latitude, @location.longitude], 500)
+  @parks = Park.near([@location.latitude, @location.longitude], 2000)
 
 end
 
