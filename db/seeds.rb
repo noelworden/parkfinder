@@ -57,12 +57,6 @@ Park.create(
 
 Park.create(
   parktype: Park::PARK_TYPE[0],
-  parkname: "",
-  address: "",
-    )
-
-Park.create(
-  parktype: Park::PARK_TYPE[0],
   parkname: "Main Park Rd, Alpine, TX 79830",
   address: "Bryce Canyon National Park, Garfield County, Utah 84764",
     )
@@ -101,12 +95,6 @@ Park.create(
   parktype: Park::PARK_TYPE[0],
   parkname: "Cuyahoga Valley National Park",
   address: "Cuyahoga Valley National Park, Vaughn Road, Brecksville, OH",
-    )
-
-Park.create(
-  parktype: Park::PARK_TYPE[0],
-  parkname: "",
-  address: "",
     )
 
 Park.create(
