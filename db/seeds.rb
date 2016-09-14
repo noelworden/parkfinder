@@ -29,7 +29,7 @@ Park.create(
 sleep 0.1
 Park.create(
   parktype: Park::PARK_TYPE[0],
-  parkname: "Acadia Nation Park",
+  parkname: "Acadia National Park",
   address: "25 Visitor Center Rd, Bar Harbor, ME 04609",
   )
 sleep 0.1
