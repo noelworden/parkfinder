@@ -5,21 +5,22 @@
   #     t.string :address
   #     t.float :latitude -autofill via gem
   #     t.float :longitude -autofill via gem
+  #     t.timestamps null: false
 Park.destroy_all
 
-sleep .1  #     t.timestamps null: false
+sleep 0.1
 Park.create(
   parktype: Park::PARK_TYPE[0],
   parkname: "Rocky Mountain National Park",
   address: "1000 US Hwy 36, Estes Park, CO 80517",
   )
-sleep .1
+sleep 0.1
 Park.create(
   parktype: Park::PARK_TYPE[0],
   parkname: "Black Canyon of the Gunnison",
   address: "102 Elk Creek, Gunnison, CO 81230",
   )
-sleep .1
+sleep 0.1
 Park.create(
   parktype: Park::PARK_TYPE[0],
   parkname: "Mesa Verde National Park",
@@ -31,7 +32,7 @@ Park.create(
   parkname: "Acadia Nation Park",
   address: "25 Visitor Center Rd, Bar Harbor, ME 04609",
   )
-sleep .1
+sleep 0.1
 Park.create(
   parktype: Park::PARK_TYPE[0],
   parkname: "Glacier National Park",
@@ -241,7 +242,7 @@ Park.create(
   parkname: "Lassen Volcanic National Park",
   address: "McCullough Road Port Alsworth, AK 99653",
     )
-sleep .1  
+sleep 0.1
 Park.create(
   parktype: Park::PARK_TYPE[0],
   parkname: "Mammoth Cave National Park",
