@@ -5,5 +5,9 @@ class ParksController < ApplicationController
   
   def show
     @park = Park.find(params[:id])
+
+    @map_data ={
+      key:"#{}"
+    }
   end
 end
