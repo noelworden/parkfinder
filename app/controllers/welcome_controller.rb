@@ -1,7 +1,7 @@
 class WelcomeController < ApplicationController
   def main
   end
-  
+
   def show
   end
 
