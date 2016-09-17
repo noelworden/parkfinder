@@ -1,11 +1,7 @@
 Rails.application.routes.draw do
-  #TODO clean
-  resources :locations#, only: [:new, :show]
-  resources :parks
 
-  #get 'welcome/show'
-
-  get 'welcome/about'
+  resources :locations, only: [:index, :show, :new, :create]
+  resources :parks, only: [:show]
 
   root 'locations#new'
 end

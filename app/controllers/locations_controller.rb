@@ -12,17 +12,18 @@ def show
 end
 
 def new
-  # TODO: Restore when pushing to heroku
-  ip = request.ip
-  # TODO: Delete when pushing to heroku
-  # ip = "69.65.45.57" #burned in ip address for local testing
+
+  ip = request.ip ###for deployment
+
+  # ip = "69.65.45.57" ###for local testing
 
   @location = Location.new
 end
 
 def create
-  # ip = "69.65.45.57"
-  ip = request.ip
+  # ip = "69.65.45.57" ###for local testing
+
+  ip = request.ip ###for deployment
 
   @location = Location.new(ip: ip)
 
