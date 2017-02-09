@@ -13,17 +13,17 @@ end
 
 def new
 
-  ip = request.ip ###for deployment
+  # ip = request.ip ###for deployment
 
-  # ip = "69.65.45.57" ###for local testing
+  ip = "69.65.45.57" ###for local testing
 
   @location = Location.new
 end
 
 def create
-  # ip = "69.65.45.57" ###for local testing
+  ip = "69.65.45.57" ###for local testing
 
-  ip = request.ip ###for deployment
+  # ip = request.ip ###for deployment
 
   @location = Location.new(ip: ip)
 

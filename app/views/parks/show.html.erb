@@ -4,8 +4,7 @@
   width="800"
   height="650"
   frameborder="0" style="border:0"
-  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCv75dDCMEZU_3xsl8SQAJm2Yfjou6TQI8
-    &q=<%= @park.address %>" allowfullscreen>
+  src="https://www.google.com/maps/embed/v1/place?key=<%=ENV['GOOGLE_KEY']%>&q=<%= @park.address %>" allowfullscreen>
 </iframe>
 
 <!-- <%=ENV["GOOGLE_KEY"]%> -->
